@@ -1,0 +1,972 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 ">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        #header{
+            width: 100%;
+            height: 70px;
+            
+        }
+        #image1{
+            float: left;
+            margin-left: 40px;
+            
+            transform: translate(50%,50%);
+        }
+        #xsj{
+            font-size: 22px;
+            font-family: 黑体;
+            line-height: 80px;
+            float: left;
+           margin-left: 30px;
+        }
+        #shouye{
+            width: 60px;
+            height: 80px;
+            font-size: 16px;
+            font-family: 微软雅黑;
+            border-bottom: 4px #E74F4B solid;
+            float: left;
+            margin-left: 700px;
+            line-height: 60px;
+           box-sizing: border-box;
+           padding-left: 20px;
+            color:#ED7776 ;
+        }
+        #zuixinhuodong{
+            font-size: 16px;
+            font-family: 微软雅黑;
+            float: left;
+            line-height: 60px;
+            margin-left: 30px;
+            color: #9EA1A5;
+        }
+        #xmjs{
+            font-size: 16px;
+            font-family: 微软雅黑;
+            float: left;
+            line-height: 60px;
+            margin-left: 30px;
+            color: #9EA1A5;
+        }
+        #axsq{
+            font-size: 16px;
+            font-family: 微软雅黑;
+            float: left;
+            line-height: 60px;
+            margin-left: 30px;
+            color: #9EA1A5;
+        }
+        #gywm{
+            font-size: 16px;
+            font-family: 微软雅黑;
+            float: left;
+            line-height: 60px;
+            margin-left: 30px;
+            color: #9EA1A5;
+        }
+        #tx{
+            float: left;
+            line-height: 76px;
+            margin-left: 30px;
+             
+        }
+        #dr{
+            color: red;
+            font-size: 16px;
+            font-family: 微软雅黑;
+            float: left;
+            margin-left: 5px;
+            line-height: 60px;
+        }
+        #content{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            margin-top: 0px;
+        }
+      
+        #p1{
+            padding: 0px;
+            
+            background-image: url(http://img1.juimg.com/160502/330623-16050214591591.jpg);
+            width: 100%;
+            height: 600px;
+        }
+        #time{
+            font-size: 36px;     
+            color: rgb(92, 81, 81);
+            font-family: 黑体;
+            margin-left: 340px;
+            margin-top: 280px;
+             }
+             #xsd{
+             font-size: 16px;
+             font-family: 黑体;
+             color: rgb(92, 81, 81);
+             margin-left: 340px;
+             margin-top: 20px;
+
+             }
+             #ksty{
+                 width: 220px;
+                 height: 40px;
+                 background-color:#E8504F ;
+                 margin-left: 380px;
+                 margin-top: 36px;
+                 border-radius: 9%;
+                 font-size: 20px;
+                 color: #ffff;
+                 box-sizing: border-box;
+                padding-left: 65px;
+                padding-top: 5px;                 
+             }
+             #yq{
+                margin-top: 40px;
+                margin-left: 180px;
+                float: left;
+             }
+             #p2{
+                 width: 100%;
+                 height: 140px;
+             }
+             #qz{
+                margin-top: 40px;
+                margin-left: 310px;
+                float: left;
+             }
+             #hd{
+                margin-top: 40px;
+                margin-left: 310px;
+                float: left;
+             }
+             #fk{
+                margin-top: 40px;
+                margin-left: 320px;
+                float: left;
+             }
+             #dzqxsj{
+                 float: left;
+                 font-size: 16px;
+                 font-family: 微软雅黑;
+                 flex: 1;
+                 box-sizing: border-box;
+                margin-left: 100px;
+                 border-right: 3px #ADADAD solid;
+                 height: 50px;
+             }
+             #ffdcdsh{
+                 float: left;
+                 font-size: 16px;
+                 font-family: 微软雅黑;
+                 flex: 1;
+                 border-right: 3px #ADADAD solid;
+                 margin-left: 60px;
+                 height: 50px;
+             }
+             #ssdxln{
+                 float: left;
+                 font-size: 16px;
+                 font-family: 微软雅黑;
+                 flex: 1;
+                 border-right: 3px #ADADAD solid;
+                 padding-left: 40px;
+                 height: 50px;
+             }
+             #wsdpyjz{
+                 float: left;
+                 font-size: 16px;
+                 font-family: 微软雅黑;
+                 flex: 1;
+                 height: 50px;
+                 margin-left: 30px;
+             }
+             #p3{
+                 display: flex;
+                 flex-direction: row;
+                 height: 140px;
+             }
+             #p4{
+                 width: 100%;
+                 height: 260px;
+                 background-color: #797575;
+             }
+             #image2{
+                 margin-top: 0px;
+                 margin-left: 700px;
+             }
+             #gyxsj{
+                 font-size: 46px;
+                 color: #2c2b2b;
+                 font-family: 黑体;
+                position: absolute;
+                top: 1120px;
+                left: 480px;
+             }
+             #p5{
+                 background-image: url(http://img.zcool.cn/community/01a1555771fd710000012e7ec8f6d4.jpg);
+                 width: 100%;
+                 height: 400px;
+                 background-size:100% 400px;   
+                 opacity: 0.6;          
+             }
+             #czxsj{
+                 color:#a00da0;
+                
+                 font-size: 24px;
+                 font-family: 黑体;
+                 position: absolute;
+                 left: 50%;
+                 margin-top: 60px;
+                 transform: translate(-50%,0);
+             }
+             #xbk{
+                
+                 width: 40px;
+                 height: 3px;
+                 background-color: #a00da0;
+                 left: 50%;
+                 position: absolute;
+                 transform: translate(-50%,0);
+                 margin-top: 90px;
+             }
+             #mgcs{
+                left: 50%;
+                 position: absolute;
+                 transform: translate(-50%,0);
+                 font-size: 14px;
+                 font-family: 黑体;
+                 margin-top: 120px;
+                 color:#a00da0;
+                
+             }
+             #s1{
+                 width: 260px;
+                 height: 40px;
+                 margin-left: 200px;
+                 margin-top: 260px;
+                 font-family: 微软雅黑;
+             }
+             #s2{
+                width: 260px;
+                 height: 40px;
+                 margin-left: 20px;
+                 margin-top: 260px;
+                 font-family: 微软雅黑;
+             }
+             #s3{
+                width: 260px;
+                 height: 40px;
+                 margin-left: 20px;
+                 margin-top: 260px;
+                 font-family: 微软雅黑;
+             }
+             #s4{
+                width: 260px;
+                 height: 40px;
+                 margin-left: 20px;
+                 margin-top: 260px;
+                 background-color: red;
+                 color: #ffff;
+                 font-size: 16px;
+                 font-family: 黑体;
+                 
+                 letter-spacing: 20px;
+             }
+             #p6{
+                 height: 550px;
+                 width: 100%;
+                display: flex;
+                flex-direction: row;
+                background-color: #F8F8F8;
+                
+                
+             }
+             #p61{
+                 background-image: url(http://art.people.com.cn/NMediaFile/2015/0529/MAIN201505291410000579378862820.jpg);
+                 background-size: 300px 300px;
+                 float: left;
+                margin-left: 120px;
+                 width: 300px;
+                 height: 300px;
+                 border: #eee solid 2px;
+                 margin-top: 100px;
+               
+             }
+             #p62{
+              position: absolute;
+              left: 245px;
+              margin-top: 415px;
+               line-height: 18px;
+               font-family: 黑体;
+               
+             }
+             #p63{
+                position: absolute;
+                left: 229px;
+                margin-top: 440px;
+                 font-size: 14px;
+                 font-family: 微软雅黑;
+                 color: #A8A8A8;
+                 
+             }
+             #p64{
+                 background-image: url(http://www.people.com.cn/mediafile/pic/20140210/47/2206731239317631731.jpg);
+                 background-size: 300px 300px;
+                float: left;
+                 margin-left: 40px;
+                 width: 300px;
+                 height: 300px;
+                 border: #eee solid 2px;
+                 margin-top: 160px;
+             }
+             #p65{
+                 font-size: 26px;
+                 font-family: 黑体;
+                 letter-spacing: 20px;
+                position: absolute;
+                left: 540px;
+                margin-top: 100px;
+
+             }
+             #p66{
+                 font-size: 12px;
+                 position: absolute;
+                 font-family: 微软雅黑;
+                 left: 564px;
+                 margin-top: 130px;
+                 color: #A8A8A8;
+                 }
+                 #p67{
+                     background-image: url(http://art.people.com.cn/NMediaFile/2013/0726/MAIN201307261430000016817618515.jpg);
+                     background-size: 300px 300px;
+                   margin-left: 40px;
+                     width: 300px;
+                     height: 300px;
+                    border: #eee solid 2px;
+                    float: left;
+                    margin-top: 100px;
+                 }
+                 #p68{
+                    position: absolute;
+                    margin-top: 425px;
+               left: 920px;
+               font-size: 18px;
+               font-family: 黑体;
+                 }
+                 #p69{
+                    position: absolute;
+                    left: 910px;
+                    margin-top: 455px;
+                 font-size: 14px;
+                 font-family: 微软雅黑;
+                 color: #A8A8A8;
+                 }
+                 #p610{
+                     background-image: url(http://5b0988e595225.cdn.sohucs.com/images/20190604/8cfc27ffb9a24eb7922c9dea745efee0.jpeg);
+                     float: left;
+                     background-size: 300px 300px;
+                    margin-left: 40px;
+                    
+                     width: 300px;
+                     height: 300px;
+                    border: #eee solid 2px;
+                    margin-top: 100px;
+                    
+                 }
+                 #p611{
+                    position: absolute;
+                    margin-top: 429px;
+                    left: 1260px;
+               font-size: 18px;
+               font-family: 黑体;
+                 }
+                 #p612{
+                    position: absolute;
+                    margin-top: 455px;
+                 font-size: 14px;
+                 font-family: 微软雅黑;
+                 color: #A8A8A8;
+                 left: 1250px;
+                 }
+                 #p7{
+                     width: 100%;
+                     height: 600px;
+                     
+                     
+                 }
+                 #image3{
+                     background-image: url(http://picnew3.photophoto.cn/20081225/zhongqingyoudiandaxuetupian-09586369_1.jpg);
+                     width: 70%;
+                     height: 600px;
+                     background-size: 100% 600px;
+                     opacity: 0.7;
+                     float: left;
+                 }
+                 #xsj0{
+                     font-size: 46px;
+                     font-family: 黑体;
+                    margin-left: 460px;
+                     margin-top: 130px;
+                 color: black;    
+
+                 }
+                 #time1{
+                    font-size: 166px;
+                     font-family: 黑体;
+                    margin-left: 360px;
+                     
+                    margin-top: -30px;
+                 color: black; 
+                 }
+                 #xsjbj{
+                     font-size: 26px;
+                     font-family: 黑体;
+                     margin-left: 460px;
+                     
+                    
+                 color: black; 
+                 }
+                 #xsj1{
+                     width: 30%;
+                     height: 600px;
+                     float: left;
+                 }
+                #xsj01{
+                    font-size: 20px;
+                    font-family: 黑体;
+                    text-align: center;
+                    margin-top: 100px;
+                }
+                #xsj02{
+                    color: red;
+                }
+                #xsj03{
+                    color: rgba(167, 161, 161, 0.801);
+                    font-size: 16px;
+                    font-family: 微软雅黑;
+                    text-align: center;
+                    line-height: 50px;
+                    margin-top: 20px
+                    
+                }
+                #gdxq{
+                    width: 120px;
+                    height: 26px;
+                    text-align: center;
+                    padding-top: 6px;
+                    border: 1px solid red;
+                    color: red;
+                    font-size: 20px;
+                    font-family: 黑体;
+                   margin-left: 160px;
+                    margin-top: 60px;
+                }
+                #p8{
+                    width: 100%;
+                    height: 500px;
+                    
+                    display: flex;
+                    flex-direction: row;
+                }
+                #f1{
+                    flex: 1;
+                    background-color: #E8504F;
+                    font-size: 20px;
+                    font-family: 微软雅黑;
+                    text-align: center;
+                    padding-top: 150px;
+                    color: #F6E4E0;
+                    line-height: 30px;
+                }
+                #f2{
+                    flex: 1;
+                }
+                #f3{
+                    flex: 1;
+                    background-image: url(https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=326929120,3891222528&fm=26&gp=0.jpg);
+                    background-size: 506px 500px;
+                    
+                    
+                }
+                #g1{
+                    width: 50px;
+                    height: 2px;
+                    background-color: #F6E4E0 ;
+                    margin-left: 230px;
+                    margin-top: 20px;
+                }
+                #g2{
+                    width: 200px;
+                    height: 50px;
+                    border: 1px #ffff solid;
+                    text-align: center;
+                    padding-top: 20px;
+                    font-family: 黑体;
+                    margin-left: 150px;
+                    margin-top: 40px;
+                  
+                    
+                }
+                #f2{
+                    flex: 1;
+                    background-color: #ffff;
+                    font-size: 20px;
+                    font-family: 微软雅黑;
+                    text-align: center;
+                    padding-top: 150px;
+                    color: black;
+                    line-height: 30px;  
+                }
+              #z1{
+                width: 50px;
+                    height: 2px;
+                    background-color: #B1B1B1 ;
+                    margin-left: 230px;
+                    margin-top: 20px;
+              }
+              #z2{
+                width: 200px;
+                    height: 50px;
+                    border: 1px red solid;
+                    text-align: center;
+                    padding-top: 20px;
+                    font-family: 黑体;
+                    margin-left: 150px;
+                    margin-top: 40px;
+                    color: red;
+              }
+              #p9{
+                  width: 100%;
+                  height: 700px;
+              }
+               #q1{
+                   width: 100%;
+                   height: 180px;
+                   text-align: center;
+                   font-size: 28px;
+                   font-family: 黑体;
+                   padding-top: 150px;
+                   box-sizing: border-box;
+               }
+               #q2{
+                   width: 56px;
+                   height: 3px;
+                   background-color: red;
+                   position: absolute;
+                   left: 50%;
+                   transform: translate(-50%,0);
+                   margin-top: 10px;
+               }
+               #q3{
+                   text-align: center;
+                   width: 100%;
+                   height: 100px;
+                   color: #C1C1C1;
+                   font-size: 14px;
+                   font-family: 微软雅黑;
+                   margin-top: 20px;
+                   box-sizing: border-box;
+               }
+               #q4{
+                   width: 100%;
+                   height: 520px;
+               }
+               #q5{
+                   width: 30%;
+                   float: left;
+                   height: 520px;
+                   
+               }
+               #q6{
+                   height: 520px;
+                   
+               }
+               #x1{
+                   font-size: 16px;
+                   font-family: 微软雅黑;
+                   
+                   margin-top: 50px;
+                   margin-left: 80px;
+               }
+               #x3{
+                   font-size: 14px;
+                   font-family: 微软雅黑;
+                   color: #B9B8B9;
+                   margin-top: 20px;
+                   margin-left: 80px;
+                  
+               }
+               #x2{
+                   
+                   margin-top: 20px;
+                   margin-left: 360px;
+                   
+               }
+               #x4{
+                font-size: 12px;
+                color: #B9B8B9;
+                margin-left: 390px;
+                margin-top: -26px;
+
+               }
+               #x5{
+                font-size: 16px;
+                   font-family: 微软雅黑;
+                   
+                   margin-top: 50px;
+                   margin-left: 80px; 
+               }
+               #x6{
+                font-size: 14px;
+                   font-family: 微软雅黑;
+                   color: #B9B8B9;
+                   margin-top: 20px;
+                   margin-left: 80px;
+               }
+               #x7{
+                margin-top: 20px;
+                   margin-left: 360px;
+               }
+               #x8{
+                font-size: 12px;
+                color: #B9B8B9;
+                margin-left: 390px;
+                margin-top: -26px;  
+               }
+               #x9{
+                font-size: 16px;
+                   font-family: 微软雅黑;
+                   
+                   margin-top: 50px;
+                   margin-left: 80px; 
+               }
+               #x10{
+                margin-top: 20px;
+                   margin-left: 360px;
+               }
+               #x11{
+                font-size: 12px;
+                color: #B9B8B9;
+                margin-left: 390px;
+                margin-top: -26px;  
+               }
+               #i1{
+                background-color: #EDEDEF;  
+                width: 400px;
+                height: 36px;
+                margin-left: 50px;
+                margin-top: 42px; 
+                border-style: none;
+                font-size: 16px;
+                font-family: 黑体;
+               }
+               #i2{
+                background-color: #EDEDEF;  
+                width: 400px;
+                height: 36px;
+                margin-left: 20px;
+                margin-top: 42px; 
+                border-style: none;
+                font-size: 16px;
+                font-family: 黑体;
+               }
+               #i3{
+                background-color: #EDEDEF;  
+                width: 400px;
+                height: 36px;
+                margin-left: 50px;
+                margin-top: 62px; 
+                border-style: none;
+                font-size: 16px;
+                font-family: 黑体;
+               }
+               #i4{
+                background-color: #EDEDEF;  
+                width: 400px;
+                height: 36px;
+                margin-left: 20px;
+                margin-top: 62px; 
+                border-style: none;
+                font-size: 16px;
+                font-family: 黑体;
+               }
+               #i5{
+                background-color: #EDEDEF;  
+                width: 820px;
+                height: 108px;
+                margin-left: 50px;
+                margin-top: 62px; 
+                border-style: none;
+                font-size: 16px;
+                font-family: 黑体;
+                padding-top: 0px;
+               }
+               #i6{
+                background-color: #EDEDEF;  
+                width: 820px;
+                height: 42px;
+                margin-left: 50px;
+                margin-top: 62px; 
+                border-style: none;
+                font-size: 16px;
+                font-family: 黑体;
+                padding-top: 0px;
+               }
+               #p10{
+                   width: 100%;
+                   height: 400px;
+                   background-color: #33363F;
+                   overflow: hidden;
+               }
+               #r1{
+                   text-align: center;
+                   color: white;
+                   font-size: 26px;
+                   font-family: 微软雅黑;
+                   margin-top: 80px;
+               }
+               #r2{
+                   text-align: center;
+                   color: white;
+                   font-size: 16px;
+                   font-family: 微软雅黑;
+                   margin-top: 10px;
+                   
+               }
+               #k1{
+                  margin-left: 50%;
+                  transform: translate(-50%,0);
+                  width: 632px;
+                  height: 36px;
+                  margin-top: 20px;
+                  font-size: 16px;
+                  font-family: 微软雅黑;
+                  color: #C7C7C7;
+               }
+               #k2{
+                width: 80px;
+                height:39px;
+                border: 1px solid;
+                background-color: #717179;
+                margin-left: -324px;
+                font-size: 16px;
+                  font-family: 微软雅黑;
+                  color: #C7C7C7;
+                
+               }
+               #r3{
+                   width: 300px;
+                   margin-top: 40px;
+                   
+                   height: 40px;
+                   margin-left: 50%;
+                   transform: translate(-50%,0);
+               }
+               #h1,#h2,#h3,#h4{
+                   float: left;
+                   margin-left: 20px;
+               }
+               #p11{
+                   width: 100%;
+                   height: 80px;
+                   background-color: #30303A;
+                   overflow: hidden;
+               }
+               #u1{
+                   color: white;
+                   font-size: 12px;
+                   font-family: 黑体;
+                   margin-top: 40px;
+                   margin-left: 30px;
+               }
+               #u2{
+                color: white;
+                   font-size: 12px;
+                   font-family: 黑体;
+                   text-align: end;
+                   margin-right: 20px;
+                   
+               }
+              
+               
+
+             
+    </style>
+    </head>
+<body>
+    <div id="header">
+    <div id="image1"><svg t="1618925019283" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5089" width="50" height="40"><path d="M715.441919 184.731438c-87.24834 0-162.081047 14.891388-201.099269 39.869071-39.043819-25.00328-113.852976-39.869071-201.099269-39.869071-108.446862 0-235.112739 24.377686-235.11274 92.953429v525.162046a33.912106 33.912106 0 0 0 12.113588 26.00464c6.107476 5.155263 13.890028 8.033404 21.899883 8.033404 1.927976 0 3.853904-0.149487 5.78188-0.549827 58.939959-10.185611 126.51639-15.591726 195.318413-15.591725 68.87779 0 136.376406 5.406115 195.243668 15.591725 0.701361 0.149487 1.376102 0.149487 2.00272 0.224231l0.776105 0.074744c0.701361 0.074744 1.376102 0.149487 1.927976 0.149487 2.152207 0.301022 4.22967 0 6.331707-0.375766l0.626618-0.074743c58.939959-10.185611 126.441647-15.591726 195.318412-15.591726s136.376406 5.406115 195.318413 15.591726c1.851185 0.301022 3.853904 0.549826 5.78188 0.549826 8.033404 0 15.743261-2.853568 21.899883-8.033404a33.909034 33.909034 0 0 0 12.113587-26.003616V277.683843c-0.007167-68.600317-126.673045-92.952405-235.143455-92.952405z" fill="#DCE5F7" p-id="5090"></path><path d="M515.029677 848.418001c-0.910234 0-1.821492-0.045051-2.742989-0.146415a41.96394 41.96394 0 0 1-2.309885-0.20273c-1.944358-0.162798-2.917049-0.269282-3.917386-0.483274-57.85464-9.99824-124.689779-15.331659-192.811941-15.331658-68.10578 0-134.963444 5.333419-193.357672 15.42176-2.197258 0.460748-4.850145 0.719791-7.744668 0.719792-10.695506 0-21.109444-3.816021-29.326124-10.745677a45.399075 45.399075 0 0 1-16.197866-34.799814V277.686915c0-77.019726 127.398979-104.462924 246.620187-104.462924 84.719343 0 158.984818 14.107092 201.102341 37.953381 42.128786-23.846289 116.38914-37.953381 201.096197-37.953381 119.238613 0 246.647831 27.443198 246.653974 104.462924v525.156926a45.365287 45.365287 0 0 1-16.214248 34.811078c-10.178444 8.564801-24.250724 12.094133-36.919257 10.043291-58.494569-10.110868-125.358376-15.444286-193.486681-15.444286-68.133425 0-134.997232 5.333419-193.357672 15.42176-0.213992 0.038908-1.050506 0.140272-1.264498 0.162798-1.471323 0.287712-3.634793 0.579519-5.821812 0.579519z m-201.782201-39.184091c69.415329 0 137.610188 5.451165 197.201338 15.758619 0.157678 0.011263 1.219447 0.117747 1.377125 0.135153l1.545043 0.151535c0.314333 0.016382 1.118083 0.061433 1.43344 0.106484l0.225255 0.011263c0.826275 0 1.641288-0.174061 2.467563-0.320477 0.230374-0.038908 1.095557-0.146416 1.332075-0.17406 59.001392-10.217352 127.218775-15.669541 196.645368-15.669541 69.420449 0 137.638856 5.451165 197.280176 15.758619 5.67642 0.898971 13.190715-0.652215 18.305022-4.951509a22.404659 22.404659 0 0 0 8.013951-17.198202V277.686915c-0.005119-56.258403-112.32022-81.441887-223.633961-81.441886-84.819684 0-157.675268 14.224839-194.891452 38.054745a11.527925 11.527925 0 0 1-12.409491 0c-37.205945-23.829907-110.065625-38.054746-194.897595-38.054745-111.297359 0-223.600173 25.184507-223.600173 81.441886v525.16307a22.443566 22.443566 0 0 0 8.013951 17.198202c4.075064 3.439231 9.217016 5.328299 14.489001 5.328299 1.309549 0 2.438895-0.101365 3.450493-0.309214 60.042683-10.381173 128.260067-15.833363 197.652871-15.833362z" fill="#4E6DC4" p-id="5091"></path><path d="M882.65775 286.06844V766.104788c-51.533172-6.782216-109.1472-10.410866-167.162589-10.410866S599.866767 759.247828 548.333595 766.104788V286.06844c12.814949-10.336122 68.726255-30.534308 167.162589-30.534308s154.373238 20.198186 167.161566 30.534308z" fill="#FFFFFF" p-id="5092"></path><path d="M882.658774 777.614283c-0.50068 0-1.000336-0.033788-1.501016-0.101364-102.973171-13.556242-230.422321-13.432352-331.305741 0-3.271314 0.460748-6.60406-0.562113-9.099269-2.748109a11.519734 11.519734 0 0 1-3.928648-8.661046V286.066393c0-3.479162 1.573712-6.771978 4.282912-8.958997 16.489673-13.297199 76.541571-33.08583 174.389172-33.08583 97.903915 0 157.933287 19.788632 174.395316 33.091973a11.512567 11.512567 0 0 1 4.276769 8.952854V766.104788a11.507447 11.507447 0 0 1-11.509495 11.509495z m-167.161566-33.428832c53.341354 0 106.845505 3.057322 155.652071 8.874014V292.349977c-15.146336-8.09279-63.766554-25.307374-155.652071-25.307374-91.834323 0-140.482186 17.214584-155.651047 25.307374v460.699249c48.349913-5.806454 101.854064-8.863775 155.651047-8.863775z" fill="#4E6DC4" p-id="5093"></path><path d="M480.383445 286.06844V766.104788c-52.232486-6.932728-109.923305-10.561377-167.16259-10.561377s-114.928056 3.62865-167.16259 10.561377V286.06844c12.814949-10.336122 68.726255-30.534308 167.16259-30.534308 98.436335-0.100341 154.424432 20.198186 167.16259 30.534308z" fill="#FFFFFF" p-id="5094"></path><path d="M480.381397 777.614283c-0.505799 0-1.011599-0.033788-1.517398-0.101364-103.058153-13.673989-228.208681-13.685251-331.288335 0-3.287696 0.460748-6.60406-0.562113-9.099269-2.748109a11.519734 11.519734 0 0 1-3.928648-8.661046V286.066393c0-3.479162 1.573712-6.771978 4.282912-8.958997 16.489673-13.297199 76.541571-33.08583 174.389172-33.08583 98.218248 0 158.017246 19.799894 174.417842 33.108355a11.511543 11.511543 0 0 1 4.254243 8.936472V766.104788a11.507447 11.507447 0 0 1-11.510519 11.509495zM157.56776 292.349977v460.699249c98.117907-11.813589 213.196474-11.813589 311.303118 0V292.253732c-17.321068-9.476059-70.460716-25.212152-154.959924-25.212153-92.446606 0-141.174332 17.214584-156.343194 25.308398z" fill="#4E6DC4" p-id="5095"></path><path d="M599.75414 411.846609c0 8.784936 7.182556 15.967492 15.967491 15.967492h203.027245c8.784936 0 15.967492-7.182556 15.967492-15.967492 0-8.784936-7.182556-15.967492-15.967492-15.967491h-203.026221c-8.809509-0.001024-15.968516 7.182556-15.968515 15.967491zM818.674132 494.864255h-203.026221c-8.784936 0-15.967492 7.182556-15.967491 15.967492 0 8.784936 7.182556 15.967492 15.967491 15.967491h203.027245c8.784936 0 15.967492-7.182556 15.967492-15.967491 0-8.784936-7.182556-15.967492-15.968516-15.967492zM818.674132 593.82482h-203.026221c-8.784936 0-15.967492 7.182556-15.967491 15.967491 0 8.784936 7.182556 15.967492 15.967491 15.967492h203.027245c8.784936 0 15.967492-7.182556 15.967492-15.967492 0-8.784936-7.182556-15.967492-15.968516-15.967491zM209.968164 625.760827h203.027245c8.784936 0 15.967492-7.182556 15.967491-15.967492 0-8.784936-7.182556-15.967492-15.967491-15.967491H209.968164c-8.784936 0-15.967492 7.182556-15.967492 15.967491-0.001024 8.783912 7.157982 15.967492 15.967492 15.967492zM209.968164 526.799238h203.027245c8.784936 0 15.967492-7.182556 15.967491-15.967491 0-8.784936-7.182556-15.967492-15.967491-15.967492H209.968164c-8.784936 0-15.967492 7.182556-15.967492 15.967492-0.001024 8.784936 7.157982 15.967492 15.967492 15.967491zM209.968164 427.814101h203.027245c8.784936 0 15.967492-7.182556 15.967491-15.967492 0-8.784936-7.182556-15.967492-15.967491-15.967491H209.968164c-8.784936 0-15.967492 7.182556-15.967492 15.967491-0.001024 8.784936 7.157982 15.967492 15.967492 15.967492z" fill="#4E6DC4" p-id="5096"></path></svg></div>
+    <div id="xsj">新世界</div>
+    <div id="shouye">首页</div>
+    <div id="zuixinhuodong">最新活动</div>
+    <div id="xmjs">项目介绍</div>
+    <div id="axsq">爱心社区</div>
+    <div id="gywm">关于我们</div>
+   <div id="tx"> <svg t="1618887092216" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="950" id="mx_n_1618887092219" width="40" height="30"><path d="M768 733.866667L674.133333 640H392.533333L298.666667 733.866667V810.666667h469.333333v-76.8z m42.666667-17.066667V853.333333H256v-136.533333L375.466667 597.333333h311.466666l123.733334 119.466667z m-85.333334-354.133333c0 106.666667-85.333333 192-192 192S341.333333 469.333333 341.333333 362.666667 426.666667 170.666667 533.333333 170.666667 725.333333 256 725.333333 362.666667z m-42.666666 0C682.666667 281.6 614.4 213.333333 533.333333 213.333333S384 281.6 384 362.666667s68.266667 149.333333 149.333333 149.333333S682.666667 443.733333 682.666667 362.666667z" fill="#444444" p-id="951"></path></svg>
+</div>
+<div id="dr">登入</div>
+   </div>
+      
+    <div id="content">
+     <div id="p1">
+       <div id="time"><strong>Time of new life</strong></div>
+       <div id="xsd">新时代，年轻的人们让我们一起<br>
+           体验新生活，享受新生活
+       </div>
+       <div id="ksty">开始体验</div>
+     </div>
+     <!--盒子1-->
+     <div id="p2">
+    <div id="yq"><svg t="1618922479605" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2196" width="50" height="50"><path d="M932.992 507.136C840.277333 311.722667 700.032 213.333333 512 213.333333c-188.117333 0-328.234667 98.346667-421.034667 293.888a59.008 59.008 0 0 0 0 50.389334c92.8 195.413333 233.045333 293.802667 421.034667 293.802666 188.117333 0 328.234667-98.346667 420.992-293.888a58.965333 58.965333 0 0 0 0-50.389333zM512 780.970667c-157.866667 0-273.450667-80.085333-354.986667-248.576C238.592 363.818667 354.133333 283.733333 512 283.733333s273.450667 80.085333 354.986667 248.576c-81.493333 168.533333-197.034667 248.576-354.986667 248.576z" p-id="2197" fill="#d81e06"></path><path d="M508.074667 360.106667a172.245333 172.245333 0 1 0 0 344.533333 172.245333 172.245333 0 0 0 0-344.490667z m0 281.856a109.568 109.568 0 0 1-109.610667-109.610667c0-60.586667 49.066667-109.568 109.653333-109.568s109.568 49.024 109.568 109.568c0 60.586667-49.024 109.653333-109.610666 109.653333z" p-id="2198" fill="#d81e06"></path></svg></div>
+    <div id="qz"><svg t="1618923236454" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2838" width="50" height="50"><path d="M853.333333 682.666667l-113.777777-284.444445 113.777777-284.444444H227.555556V56.888889H170.666667v853.333333H113.777778v56.888889h170.666666v-56.888889H227.555556v-227.555555h625.777777z m-85.333333-512l-91.022222 227.555555 91.022222 227.555556H227.555556V170.666667h540.444444z" fill="#d81e06" p-id="2839"></path></svg></div>
+    <div id="hd"><svg t="1618923404310" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="3345" width="50" height="50"><path d="M905.527243 704.137642c-155.968726 0-289.393536 53.090124-362.909087 133.776559V718.735227c0-1.870665-0.735475 10.080808-1.063242 8.290086 33.480114-5.947757 63.346806-21.520646 83.060742-44.688118a107.259477 107.259477 0 0 0 11.551758-16.644125c6.371454 1.814705 13.102652 3.037833 20.073679 3.661387 38.884259 3.005856 81.222053-14.085951 113.327148-46.151074 38.820304-38.852281 53.833593-90.919135 42.465704-132.753288 6.131625-3.325627 12.023422-7.354753 17.619429-12.087377 29.778755-25.269971 47.526093-67.415903 47.526093-112.751559 0-55.072709-26.261264-102.606796-64.018327-124.079477 1.902643-6.611283 3.205713-13.558327 3.81328-20.785171 3.157747-38.916236-14.053973-81.286008-46.095114-113.343137-37.701103-37.653137-90.639334-54.521103-132.801255-42.649572C617.204943 26.277253 569.710827 0 513.151179 0c-45.375627 0-87.521559 17.763327-112.759553 47.550076-4.556749 5.372167-8.473954 11.048118-11.735628 16.923926-42.873412-12.223279-96.778954 5.044401-134.967709 43.305104-32.073118 32.057129-49.308821 74.410912-46.135085 113.407091 0.583584 6.819135 1.774734 13.398441 3.541473 19.681959-38.23672 20.977034-64.298127 68.30327-64.298127 124.623089 0 45.34365 17.763327 87.497576 47.582053 112.815513 5.372167 4.54076 11.032129 8.441977 16.907937 11.687662-4.013137 14.413717-4.972452 30.218441-2.590152 46.518811 4.572738 31.089819 20.617291 61.763935 45.167776 86.290438 32.025152 32.041141 72.596207 49.516673 113.495028 46.127091a103.606084 103.606084 0 0 0 20.017719-3.661388c17.467538 31.177757 52.762357 54.401188 95.323992 61.875855-0.311778 1.758745-1.055247-12.622994-1.055247-10.784306v121.873051C408.210048 757.371663 274.673318 704.137642 118.472757 704.137642a30.482253 30.482253 0 1 0 0 60.9725c196.61173 0 362.701235 100.016644 362.701235 218.396188 0 0.831407 0.415703 1.550894 0.479658 2.358317v6.899078a30.482253 30.482253 0 1 0 60.9725 0v-8.362034c0.023983-0.327766 0.16788-0.567595 0.16788-0.895361 0-118.387538 166.15346-218.396188 362.733213-218.396188 16.843983 0 30.482253-13.63827 30.482253-30.490247s-13.63827-30.482253-30.482253-30.482253zM436.509857 620.789106c0-4.404857-1.151179-9.169458-2.981872-13.158612a30.506236 30.506236 0 0 0-49.244867-8.785732c-5.388156 5.39615-12.862823 8.545903-22.032281 9.321349-21.512652 1.606854-46.063137-9.257395-65.241455-28.46769-15.141198-15.133203-25.333926-34.127652-27.972043-52.034876-1.263099-8.609857-1.806711-24.630428 8.817709-35.222871 0.015989 0 0.015989-0.015989 0.015988-0.015988a30.482253 30.482253 0 0 0-24.998165-51.851008c-6.579306-0.703498-13.014715-3.677376-19.114363-8.817709-16.02057-13.606293-25.981464-39.004173-25.981464-66.264724 0-40.794895 22.064259-75.242319 48.173631-75.242319 5.524059 0 11.112072-1.590865 15.836702-4.436835a30.498241 30.498241 0 0 0 5.835836-47.725951c-5.388156-5.372167-8.529914-12.806863-9.305361-21.944344-1.710779-20.961046 9.201435-45.959211 28.491673-65.257443 18.402871-18.418859 41.818165-29.419011 62.643308-29.419011 7.562605 0 18.147053 1.582871 25.661692 9.081521 3.98116 3.973165 9.705076 6.939049 15.173175 8.250114a30.474259 30.474259 0 0 0 37.605171-29.642852c0-7.650542 3.053821-15.141198 9.017566-22.208156 13.58231-16.02057 38.948213-25.965475 66.224753-25.965475 40.091397 0 75.258308 22.511939 75.258308 47.44615a30.642139 30.642139 0 0 0 18.163042 29.291103 30.602167 30.602167 0 0 0 33.879829-6.331483c7.858394-7.858394 18.6427-9.497224 26.325218-9.497224 20.185599 0 42.993327 10.720352 60.980495 28.659553 19.234278 19.266255 30.138498 44.26442 28.46769 65.161511-0.831407 9.257395-3.9252 16.692091-9.345333 22.080247a51.307395 51.307395 0 0 0-2.390295 2.694078 30.530219 30.530219 0 0 0-4.045114 32.376901 30.522224 30.522224 0 0 0 27.564335 17.483527c25.669686 0 48.181625 35.174905 48.181625 75.274297 0 27.244563-9.944905 52.642443-25.909515 66.192775-7.082947 5.987728-14.581597 9.025561-20.129639 9.081521a30.482253 30.482253 0 0 0-30.546207 17.283669 30.434287 30.434287 0 0 0 5.955751 34.599316c18.155048 18.17903 9.225418 58.965931-19.122357 87.289724-17.987167 17.979173-40.794895 28.667547-61.044449 28.667548-1.430979 0-2.853964-0.05596-4.045114-0.151892-9.353327-0.831407-16.796017-3.9252-22.152196-9.313356-11.431844-11.519781-31.801312-11.519781-43.289116-0.031977a30.322367 30.322367 0 0 0-8.873669 21.584601c0 7.594582-3.037833 15.069249-8.961606 22.096236-13.670247 16.07653-39.084116 26.053413-66.296702 26.053412-40.05942 0-75.234325-22.511939-75.250314-48.181625z" fill="#d81e06" p-id="3346"></path><path d="M622.529144 364.987604c0-60.948517-49.60461-110.529144-110.537138-110.529144-60.956511 0-110.529144 49.580627-110.529145 110.529144 0 60.956511 49.580627 110.529144 110.529145 110.529145 60.932528 0 110.537139-49.572633 110.537138-110.529145z m-160.085788 0a49.60461 49.60461 0 0 1 49.54865-49.54865c27.316511 0 49.556644 22.224144 49.556644 49.54865s-22.240133 49.54865-49.556644 49.54865a49.60461 49.60461 0 0 1-49.54865-49.54865z" fill="#d81e06" p-id="3347"></path></svg></div>
+    <div id="fk"><svg t="1618923485761" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="4121" width="50" height="50"><path d="M155 459.9h319.9V140c0-30.4-24.7-55.1-55.1-55.1H155c-30.4 0-55.1 24.7-55.1 55.1v264.8c0 30.4 24.7 55.1 55.1 55.1z m-11.1-320c0-6 5.1-11.1 11.1-11.1l264.9 0.1c6 0 11.1 5.1 11.1 11.1v275.8H155c-6 0-11.1-5.1-11.1-11.1V139.9zM875 84.9H610.2c-30.4 0-55.1 24.7-55.1 55.1v319.9H875c30.4 0 55.1-24.7 55.1-55.1V140c0-30.4-24.7-55.1-55.1-55.1z m11.1 319.9c0 6-5.1 11.1-11.1 11.1H599.1V140c0-6 5.1-11.1 11.1-11.1H875c6 0 11.1 5.1 11.1 11.1v264.8zM99.9 595.1V860c0 30.4 24.7 55.1 55.1 55.1h264.9c30.3 0 55.1-24.8 55.1-55.1V540H155c-30.4 0-55.1 24.7-55.1 55.1z m331 264.9c0 6-5.1 11.1-11.1 11.1H155c-6 0-11.1-5.1-11.1-11.1V595.1c0-6 5.1-11.1 11.1-11.1h275.9v276zM875 540H555.1v320c0 30.4 24.7 55.1 55.1 55.1H875c30.4 0 55.1-24.8 55.1-55.1V595.1c0-30.4-24.7-55.1-55.1-55.1z m11.1 320c0 6-5.1 11.1-11.1 11.1H610.2c-6 0-11.1-5.1-11.1-11.1V584H875c6 0 11.1 5.1 11.1 11.1V860z" p-id="4122" fill="#d81e06"></path></svg></div>
+
+     </div>
+     <!--盒子2-->
+     <div id="p3">
+     <div id="dzqxsj">打造全新世界观，让你更<br>&nbsp;&nbsp;&nbsp;爱上你的生活</div>
+     <div id="ffdcdsh">丰富多彩的公益活动，发<br>发挥新生活主人公意识</div>
+     <div id="ssdxln">时尚的新理念，超前体验<br>&nbsp;&nbsp;&nbsp;未知的生活</div>
+     <div id="wsdpyjz">完善的培养机制，培养你<br>&nbsp;&nbsp;&nbsp;全新的世界观</div>
+
+     </div>
+      <!--第三个盒子-->
+     <div id="p4">
+     <div id="image2"><svg t="1618925019283" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5089" width="100" height="200"><path d="M715.441919 184.731438c-87.24834 0-162.081047 14.891388-201.099269 39.869071-39.043819-25.00328-113.852976-39.869071-201.099269-39.869071-108.446862 0-235.112739 24.377686-235.11274 92.953429v525.162046a33.912106 33.912106 0 0 0 12.113588 26.00464c6.107476 5.155263 13.890028 8.033404 21.899883 8.033404 1.927976 0 3.853904-0.149487 5.78188-0.549827 58.939959-10.185611 126.51639-15.591726 195.318413-15.591725 68.87779 0 136.376406 5.406115 195.243668 15.591725 0.701361 0.149487 1.376102 0.149487 2.00272 0.224231l0.776105 0.074744c0.701361 0.074744 1.376102 0.149487 1.927976 0.149487 2.152207 0.301022 4.22967 0 6.331707-0.375766l0.626618-0.074743c58.939959-10.185611 126.441647-15.591726 195.318412-15.591726s136.376406 5.406115 195.318413 15.591726c1.851185 0.301022 3.853904 0.549826 5.78188 0.549826 8.033404 0 15.743261-2.853568 21.899883-8.033404a33.909034 33.909034 0 0 0 12.113587-26.003616V277.683843c-0.007167-68.600317-126.673045-92.952405-235.143455-92.952405z" fill="#DCE5F7" p-id="5090"></path><path d="M515.029677 848.418001c-0.910234 0-1.821492-0.045051-2.742989-0.146415a41.96394 41.96394 0 0 1-2.309885-0.20273c-1.944358-0.162798-2.917049-0.269282-3.917386-0.483274-57.85464-9.99824-124.689779-15.331659-192.811941-15.331658-68.10578 0-134.963444 5.333419-193.357672 15.42176-2.197258 0.460748-4.850145 0.719791-7.744668 0.719792-10.695506 0-21.109444-3.816021-29.326124-10.745677a45.399075 45.399075 0 0 1-16.197866-34.799814V277.686915c0-77.019726 127.398979-104.462924 246.620187-104.462924 84.719343 0 158.984818 14.107092 201.102341 37.953381 42.128786-23.846289 116.38914-37.953381 201.096197-37.953381 119.238613 0 246.647831 27.443198 246.653974 104.462924v525.156926a45.365287 45.365287 0 0 1-16.214248 34.811078c-10.178444 8.564801-24.250724 12.094133-36.919257 10.043291-58.494569-10.110868-125.358376-15.444286-193.486681-15.444286-68.133425 0-134.997232 5.333419-193.357672 15.42176-0.213992 0.038908-1.050506 0.140272-1.264498 0.162798-1.471323 0.287712-3.634793 0.579519-5.821812 0.579519z m-201.782201-39.184091c69.415329 0 137.610188 5.451165 197.201338 15.758619 0.157678 0.011263 1.219447 0.117747 1.377125 0.135153l1.545043 0.151535c0.314333 0.016382 1.118083 0.061433 1.43344 0.106484l0.225255 0.011263c0.826275 0 1.641288-0.174061 2.467563-0.320477 0.230374-0.038908 1.095557-0.146416 1.332075-0.17406 59.001392-10.217352 127.218775-15.669541 196.645368-15.669541 69.420449 0 137.638856 5.451165 197.280176 15.758619 5.67642 0.898971 13.190715-0.652215 18.305022-4.951509a22.404659 22.404659 0 0 0 8.013951-17.198202V277.686915c-0.005119-56.258403-112.32022-81.441887-223.633961-81.441886-84.819684 0-157.675268 14.224839-194.891452 38.054745a11.527925 11.527925 0 0 1-12.409491 0c-37.205945-23.829907-110.065625-38.054746-194.897595-38.054745-111.297359 0-223.600173 25.184507-223.600173 81.441886v525.16307a22.443566 22.443566 0 0 0 8.013951 17.198202c4.075064 3.439231 9.217016 5.328299 14.489001 5.328299 1.309549 0 2.438895-0.101365 3.450493-0.309214 60.042683-10.381173 128.260067-15.833363 197.652871-15.833362z" fill="#4E6DC4" p-id="5091"></path><path d="M882.65775 286.06844V766.104788c-51.533172-6.782216-109.1472-10.410866-167.162589-10.410866S599.866767 759.247828 548.333595 766.104788V286.06844c12.814949-10.336122 68.726255-30.534308 167.162589-30.534308s154.373238 20.198186 167.161566 30.534308z" fill="#FFFFFF" p-id="5092"></path><path d="M882.658774 777.614283c-0.50068 0-1.000336-0.033788-1.501016-0.101364-102.973171-13.556242-230.422321-13.432352-331.305741 0-3.271314 0.460748-6.60406-0.562113-9.099269-2.748109a11.519734 11.519734 0 0 1-3.928648-8.661046V286.066393c0-3.479162 1.573712-6.771978 4.282912-8.958997 16.489673-13.297199 76.541571-33.08583 174.389172-33.08583 97.903915 0 157.933287 19.788632 174.395316 33.091973a11.512567 11.512567 0 0 1 4.276769 8.952854V766.104788a11.507447 11.507447 0 0 1-11.509495 11.509495z m-167.161566-33.428832c53.341354 0 106.845505 3.057322 155.652071 8.874014V292.349977c-15.146336-8.09279-63.766554-25.307374-155.652071-25.307374-91.834323 0-140.482186 17.214584-155.651047 25.307374v460.699249c48.349913-5.806454 101.854064-8.863775 155.651047-8.863775z" fill="#4E6DC4" p-id="5093"></path><path d="M480.383445 286.06844V766.104788c-52.232486-6.932728-109.923305-10.561377-167.16259-10.561377s-114.928056 3.62865-167.16259 10.561377V286.06844c12.814949-10.336122 68.726255-30.534308 167.16259-30.534308 98.436335-0.100341 154.424432 20.198186 167.16259 30.534308z" fill="#FFFFFF" p-id="5094"></path><path d="M480.381397 777.614283c-0.505799 0-1.011599-0.033788-1.517398-0.101364-103.058153-13.673989-228.208681-13.685251-331.288335 0-3.287696 0.460748-6.60406-0.562113-9.099269-2.748109a11.519734 11.519734 0 0 1-3.928648-8.661046V286.066393c0-3.479162 1.573712-6.771978 4.282912-8.958997 16.489673-13.297199 76.541571-33.08583 174.389172-33.08583 98.218248 0 158.017246 19.799894 174.417842 33.108355a11.511543 11.511543 0 0 1 4.254243 8.936472V766.104788a11.507447 11.507447 0 0 1-11.510519 11.509495zM157.56776 292.349977v460.699249c98.117907-11.813589 213.196474-11.813589 311.303118 0V292.253732c-17.321068-9.476059-70.460716-25.212152-154.959924-25.212153-92.446606 0-141.174332 17.214584-156.343194 25.308398z" fill="#4E6DC4" p-id="5095"></path><path d="M599.75414 411.846609c0 8.784936 7.182556 15.967492 15.967491 15.967492h203.027245c8.784936 0 15.967492-7.182556 15.967492-15.967492 0-8.784936-7.182556-15.967492-15.967492-15.967491h-203.026221c-8.809509-0.001024-15.968516 7.182556-15.968515 15.967491zM818.674132 494.864255h-203.026221c-8.784936 0-15.967492 7.182556-15.967491 15.967492 0 8.784936 7.182556 15.967492 15.967491 15.967491h203.027245c8.784936 0 15.967492-7.182556 15.967492-15.967491 0-8.784936-7.182556-15.967492-15.968516-15.967492zM818.674132 593.82482h-203.026221c-8.784936 0-15.967492 7.182556-15.967491 15.967491 0 8.784936 7.182556 15.967492 15.967491 15.967492h203.027245c8.784936 0 15.967492-7.182556 15.967492-15.967492 0-8.784936-7.182556-15.967492-15.968516-15.967491zM209.968164 625.760827h203.027245c8.784936 0 15.967492-7.182556 15.967491-15.967492 0-8.784936-7.182556-15.967492-15.967491-15.967491H209.968164c-8.784936 0-15.967492 7.182556-15.967492 15.967491-0.001024 8.783912 7.157982 15.967492 15.967492 15.967492zM209.968164 526.799238h203.027245c8.784936 0 15.967492-7.182556 15.967491-15.967491 0-8.784936-7.182556-15.967492-15.967491-15.967492H209.968164c-8.784936 0-15.967492 7.182556-15.967492 15.967492-0.001024 8.784936 7.157982 15.967492 15.967492 15.967491zM209.968164 427.814101h203.027245c8.784936 0 15.967492-7.182556 15.967491-15.967492 0-8.784936-7.182556-15.967492-15.967491-15.967491H209.968164c-8.784936 0-15.967492 7.182556-15.967492 15.967491-0.001024 8.784936 7.157982 15.967492 15.967492 15.967492z" fill="#4E6DC4" p-id="5096"></path></svg></div>
+      <div id="gyxsj">关于新世界，你不知道的还有什么？</div>
+     </div>
+      <!-- 第四个盒子-->
+     <div id="p5">
+     <div id="czxsj"><strong>查找新世界城市活动信息</strong></div>
+     <div id="mgcs"><strong>每个城市有不同的活动信息，请自主查询你需要了解的城市</strong> </div>
+     <div id="xbk"></div>
+     <select id="s1"  >
+     <option>中国</option>
+     
+     </select>
+     <select id="s2">
+     <option >北京市</option>
+     <option >重庆市</option>
+     <option >山东省</option>
+     <option >上海市</option>
+     </select>
+     <select id="s3">
+         <option value="">城市</option>z
+        
+     </select>
+     <input type="submit" value="搜索" id="s4" placeholder="搜索">
+     </div>
+      <!--第五个盒子-->
+     <div id="p6">
+     <div id="p61"></div>
+     <div id="p62">北京活动</div>
+     <div id="p63">新社区大联盟</div>
+     <div id="p64"></div>
+     <div id="p65">上海活动</div>
+     <div id="p66">夜上海新观景探索</div>
+     <div id="p67"></div>
+     <div id="p68">深圳活动</div>
+    <div id="p69">全新海岸线观景点</div>
+    <div id="p610"></div>
+    <div id="p611">香港活动</div>
+    <div id="p612">奢侈消费大派送</div>
+     </div>
+      <!--第六个盒子-->
+     <div id="p7">
+     <div id="image3">
+     <div id="xsj0"><strong>新世界</strong></div>
+     <div id="time1">TIME</div>
+     <div id="xsjbj">@新世界-CQUPT</div>
+     </div>
+     <div id="xsj1"> 
+        <div id="xsj01">新世界/<span id="xsj02"><strong>01</strong></span></div>
+        <div id="xsj03">新世界是个新世界新世界是个新世界新世界是个新世界<br>
+            新世界是个新世界新世界是个新世界新世界是个新世界<br>
+            新世界是个新世界新世界是个新世界</div>
+     
+     <div id="gdxq">更多详情</div>
+     <div id="tb1"><svg t="1619013695037" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1329" width="12z0" height="40"><path d="M256 512a96 96 0 1 1-192 0 96 96 0 0 1 192 0z m704 0a96 96 0 1 1-192 0 96 96 0 0 1 192 0zM512 608a96 96 0 1 0 0-192 96 96 0 0 0 0 192z" p-id="1330"></path></svg></div>
+     </div>
+      <!--第七个盒子-->
+     <div id="p8">
+     <div id="f1">&nbsp;&nbsp;新时代<br>关于爱生活的我们
+      <div id="g1"></div>
+      <div id="g2">查看更多</div>
+    </div>
+     <div id="f2">&nbsp;&nbsp;新时代<br>关于爱生活的我们
+        <div id="z1"></div>
+        <div id="z2">查看更多</div></div>
+     <div id="f3">
+        
+     </div>
+
+     </div>
+      <!--第八个盒子-->
+     <div id="p9">
+        <div id="q1">成为我们的志愿者</div>
+        <div id="q2"></div>
+        <div id="q3">新世界的大家庭需要每一个热爱生活人的加入，如果你够年轻，有梦想，有激情<br>那就不要犹豫，快来加入我们，成为改变所有人生活的人</div>
+        <div id="q4">
+            <div id="q5">
+            <div id="x1">新世界志愿者协议</div>
+            <div id="x3">加入新世界志愿者的人员必须遵守中华人民共和国的<br>相关法律，并且本着平等自愿的原则.....</div>
+            <div id="x2"><svg role="img" xmlns="http://www.w3.org/2000/svg" width="28px" height="28px" viewBox="0 0 24 24" aria-labelledby="chevronDownIconTitle" stroke="#2329D6" stroke-width="0.5" stroke-linecap="square" stroke-linejoin="miter" fill="none" color="#2329D6"> <title id="chevronDownIconTitle">Chevron Down</title> <polyline points="6 10 12 16 18 10"/> </svg></div>
+
+            <div id="x4">more</div>
+            <div id="x5">新世界志愿者协议</div>
+            <div id="x6"> 加入新世界志愿者的人员必须遵守中华人民共和国的<br>相关法律，并且本着平等自愿的原则.....</div>
+            <div id="x7"><svg role="img" xmlns="http://www.w3.org/2000/svg" width="28px" height="28px" viewBox="0 0 24 24" aria-labelledby="chevronDownIconTitle" stroke="#2329D6" stroke-width="0.5" stroke-linecap="square" stroke-linejoin="miter" fill="none" color="#2329D6"> <title id="chevronDownIconTitle">Chevron Down</title> <polyline points="6 10 12 16 18 10"/> </svg></div>
+            <div id="x8">more</div>
+            <div id="x9">更多条款</div>
+            <div id="x10"><svg role="img" xmlns="http://www.w3.org/2000/svg" width="28px" height="28px" viewBox="0 0 24 24" aria-labelledby="chevronDownIconTitle" stroke="#2329D6" stroke-width="0.5" stroke-linecap="square" stroke-linejoin="miter" fill="none" color="#2329D6"> <title id="chevronDownIconTitle">Chevron Down</title> <polyline points="6 10 12 16 18 10"/> </svg></div>
+           <div id="x11">more</div>
+            </div>
+            <!--结束-->
+            <div id="q6">
+            <input type="text" placeholder="姓名:" id="i1"  >
+            <input type="text" placeholder="年龄:" id="i2">
+            <input type="text" placeholder="联系方式:" id="i3">
+            <input type="text" placeholder="联系地址:"  id="i4">
+            
+            <textarea id="i5" placeholder="请简单描述你梦想的生活:" ></textarea>
+            <input type="submit" value="提交申请" id="i6">
+            </div>
+            <!--结束-->
+        </div>
+
+     </div>
+     
+     <!--第九个盒子-->
+     <div id="p10">
+    <div id="r1">请联系我们</div>
+    <div id="r2">为了更好的获取我们最新的产品资讯，你可以留下您的电子邮箱快速订阅我们的产品资讯<br>也可以有以下任何方式关注我们的动态</div>
+    
+<span><input type="text" placeholder="someone@email.com" id="k1">
+     <input type="submit" placeholder="提交" id="k2"></span>
+<div id="r3">
+    <div id="h1"><svg t="1619107216761" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="7368" width="40" height="40"><path d="M154.294857 460.580571c-3.986286-9.728-4.571429-19.419429-4.571428-29.696 0-16.018286 10.276571-41.728 20.004571-53.723428-0.585143-14.848 5.705143-45.129143 17.152-54.857143 0-105.728 81.700571-238.848 177.152-284.562286C422.875429 9.728 484.608 0.036571 549.193143 0.036571c50.285714 0 105.142857 11.995429 151.990857 31.414858 134.290286 56.576 164.571429 161.718857 193.133714 296.009142l0.585143 2.852572c16.566857 25.161143 31.414857 54.857143 31.414857 85.723428 0 15.433143-10.276571 30.866286-10.276571 44.580572 0 1.133714 3.437714 5.705143 3.986286 6.838857 49.152 72.557714 93.696 151.442286 93.696 241.700571 0 20.004571-10.861714 89.709714-42.861715 89.709715-22.272 0-46.848-54.272-54.857143-69.156572-0.585143-0.585143-1.133714-0.585143-1.718857-0.585143l-2.852571 2.304c-18.285714 47.433143-38.290286 92.013714-75.446857 127.414858 32.585143 31.414857 85.138286 28.562286 94.866285 82.870857-2.852571 6.290286-1.718857 13.129143-6.290285 19.419428-32.585143 49.152-119.990857 55.442286-172.580572 55.442286-69.705143 0-126.281143-18.285714-192-37.705143-13.714286-3.986286-34.304-1.718857-49.152-3.437714C475.977143 1013.723429 390.838857 1024 341.686857 1024c-43.446857 0-211.419429-2.852571-211.419428-77.129143 0-32 6.838857-41.142857 29.147428-61.696 17.700571-3.437714 30.866286-13.129143 51.419429-14.299428 2.852571 0 5.156571-0.585143 8.009143-1.133715 0.585143-0.585143 1.133714-0.585143 1.133714-2.304l-1.133714-1.718857c-39.424-9.142857-94.866286-108.580571-103.424-149.723428l-2.852572-1.718858c-3.986286 0-5.705143 8.557714-6.838857 11.446858-12.580571 29.147429-42.276571 60.562286-75.446857 64H29.696c-4.571429 0-2.852571-4.571429-6.290286-5.705143-8.009143-18.870857-13.129143-35.986286-13.129143-57.161143 0-114.285714 54.857143-198.838857 144.018286-266.276572z" fill="#ffffff" p-id="7369"></path></svg></div>
+    <div id="h2"><svg t="1619107276945" class="icon" viewBox="0 0 1141 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="8058" width="40" height="40"><path d="M916.48 518.144q27.648 21.504 38.912 51.712t9.216 62.976-14.336 65.536-31.744 59.392q-34.816 48.128-78.848 81.92t-91.136 56.32-94.72 35.328-89.6 18.944-75.264 7.68-51.712 1.536-49.152-2.56-68.096-10.24-78.336-21.504-79.872-36.352-74.24-55.296-59.904-78.848q-16.384-29.696-22.016-63.488t-5.632-86.016q0-22.528 7.68-51.2t27.136-63.488 53.248-75.776 86.016-90.112q51.2-48.128 105.984-85.504t117.248-57.856q28.672-10.24 63.488-11.264t57.344 11.264q10.24 11.264 19.456 23.04t12.288 29.184q3.072 14.336 0.512 27.648t-5.632 26.624-5.12 25.6 2.048 22.528q17.408 2.048 33.792-1.536t31.744-9.216 31.232-11.776 33.28-9.216q27.648-5.12 54.784-4.608t49.152 7.68 36.352 22.016 17.408 38.4q2.048 14.336-2.048 26.624t-8.704 23.04-7.168 22.016 1.536 23.552q3.072 7.168 14.848 13.312t27.136 12.288 32.256 13.312 29.184 16.384zM658.432 836.608q26.624-16.384 53.76-45.056t44.032-64 18.944-75.776-20.48-81.408q-19.456-33.792-47.616-57.344t-62.976-37.376-74.24-19.968-80.384-6.144q-78.848 0-139.776 16.384t-105.472 43.008-72.192 60.416-38.912 68.608q-11.264 33.792-6.656 67.072t20.992 62.976 42.496 53.248 57.856 37.888q58.368 25.6 119.296 32.256t116.224 0.512 100.864-21.504 74.24-33.792zM524.288 513.024q20.48 8.192 38.912 18.432t32.768 27.648q10.24 12.288 17.92 30.72t10.752 39.424 1.536 42.496-9.728 38.912q-8.192 18.432-19.968 37.376t-28.672 35.328-40.448 29.184-57.344 18.944q-61.44 11.264-117.76-11.264t-88.064-74.752q-12.288-39.936-13.312-70.656t16.384-66.56q13.312-27.648 40.448-51.712t62.464-38.912 75.264-17.408 78.848 12.8zM361.472 764.928q37.888 3.072 57.856-18.432t21.504-48.128-15.36-47.616-52.736-16.896q-27.648 3.072-43.008 23.552t-17.408 43.52 9.728 42.496 39.424 21.504zM780.288 6.144q74.752 0 139.776 19.968t113.664 57.856 76.288 92.16 27.648 122.88q0 33.792-16.384 50.688t-35.328 17.408-35.328-14.336-16.384-45.568q0-40.96-22.528-77.824t-59.392-64.512-84.48-43.52-96.768-15.872q-31.744 0-47.104-15.36t-14.336-34.304 18.944-34.304 51.712-15.36zM780.288 169.984q95.232 0 144.384 48.64t49.152 146.944q0 30.72-10.24 43.52t-22.528 11.264-22.528-14.848-10.24-35.84q0-60.416-34.816-96.256t-93.184-35.84q-19.456 0-28.672-10.752t-9.216-23.04 9.728-23.04 28.16-10.752z" p-id="8059" fill="#ffffff"></path></svg></div>
+    <div id="h3"><svg t="1619107320865" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="8509" width="40" height="40"><path d="M959.2 383.9c-0.3-82.1-66.9-148.6-149.1-148.6H575.9l21.6 85.2 201 43.7c18.3 4.2 32.1 20.3 32.9 39.7 0.1 0.5 0.1 216.1 0 216.6-0.8 19.4-14.6 35.5-32.9 39.7l-201 43.7-21.6 85.3h234.2c82.1 0 148.8-66.5 149.1-148.6V383.9zM225.5 660.4c-18.3-4.2-32.1-20.3-32.9-39.7-0.1-0.6-0.1-216.1 0-216.6 0.8-19.4 14.6-35.5 32.9-39.7l201-43.7 21.6-85.2H213.8c-82.1 0-148.8 66.4-149.1 148.6V641c0.3 82.1 67 148.6 149.1 148.6H448l-21.6-85.3-200.9-43.9z m200.9-158.8h171v21.3h-171z" p-id="8510" fill="#ffffff"></path></svg></div>
+    <div id="h4"><svg t="1619106985875" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5525" width="40" height="40"><path d="M508.586667 836.266667c-81.92 0-160.426667-30.72-221.866667-88.746667-13.653333-13.653333-13.653333-34.133333 0-47.786667 13.653333-13.653333 34.133333-13.653333 47.786667 0 47.786667 44.373333 109.226667 68.266667 174.08 68.266667 23.893333 0 47.786667-3.413333 71.68-10.24 17.066667-3.413333 37.546667 6.826667 40.96 23.893333 6.826667 17.066667-6.826667 37.546667-23.893334 40.96-30.72 10.24-58.026667 13.653333-88.746666 13.653334z m310.613333-262.826667c3.413333-13.653333 3.413333-30.72 3.413333-44.373333 0-170.666667-139.946667-307.2-314.026666-307.2-119.466667 0-232.106667 68.266667-283.306667 174.08-6.826667 17.066667 0 37.546667 17.066667 44.373333 17.066667 6.826667 37.546667 0 44.373333-17.066667 40.96-81.92 129.706667-136.533333 221.866667-136.533333 136.533333 0 245.76 105.813333 245.76 238.933333 0 10.24 0 23.893333-3.413334 34.133334-3.413333 17.066667 10.24 37.546667 27.306667 37.546666h3.413333c20.48 3.413333 34.133333-6.826667 37.546667-23.893333z m98.986667 44.373333c3.413333-6.826667 3.413333-17.066667 3.413333-27.306666 0-17.066667-17.066667-30.72-37.546667-30.72-20.48 0-34.133333 20.48-30.72 37.546666-6.826667 23.893333-139.946667 54.613333-365.226666 0-170.666667-44.373333-286.72-112.64-314.026667-157.013333-3.413333-3.413333-3.413333-6.826667-3.413333-10.24 3.413333-17.066667-6.826667-37.546667-23.893334-40.96-17.066667-3.413333-37.546667 6.826667-40.96 23.893333-3.413333 13.653333-6.826667 37.546667 10.24 64.853334 40.96 71.68 180.906667 143.36 354.986667 187.733333 85.333333 20.48 174.08 34.133333 249.173333 34.133333 102.4 3.413333 184.32-20.48 197.973334-81.92z" fill="#1784F9" p-id="5526"></path></svg></div>
+</div>
+     </div>
+     <!--第十个盒子-->
+     <div id="p11">
+     <div id="u1">@2021新世界</div>
+     <div id="u2">Back to top</div>
+     </div>
+    </div>
+    <!--中间内容-->
+    <footer></footer>  
+</body>
+</html>
