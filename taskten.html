@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       *{
+           padding: 0px;
+           margin: 0px;
+       }
+        @media screen and (min-width:641px) {
+            #wrap{
+            margin: 0 auto;
+            width: 800px;
+            box-sizing: border-box;
+            padding: 20px;
+            border:1px solid;
+            height: 300px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+            
+            #item1{
+                width: 150px;
+                height: 120px;
+                border: 2px solid #FF7D7D;
+                align-self: center;
+            }
+            #item2{
+                width: 150px;
+                height: 100px;
+                border: 2px solid #FF7D7D;
+                align-self: center;
+            }
+            #item3{
+                width: 150px;
+                height: 40px;
+                border: 2px solid #FF7D7D;
+                align-self: center;
+            }
+            #item4{
+                width: 150px;
+                height: 200px;
+                border: 2px solid #4E4EFF;
+                align-self: center;
+                
+            }
+        }
+        @media screen and (max-width:640px) {
+            #wrap{
+            margin: 0 auto;
+            width: 640px;
+            box-sizing: border-box;
+            padding: 20px;
+            border:1px solid;
+            height: 400px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+           justify-content: space-between;
+            
+        }
+            #item1{
+                width: 150px;
+                height: 200px;
+                border: 2px solid #4E4EFF;
+               
+                
+            }
+            #item2{
+                width: 150px;
+                height: 100px;
+                border: 2px solid #FF7D7D;
+                
+            }
+            #item3{
+                width: 150px;
+                height: 200px;
+                border: 2px solid #FF7D7D;
+                
+            }
+            #item4{
+                width: 150px;
+                height: 40px;
+                border: 2px solid #FF7D7D;
+                flex-direction: row;
+               
+               
+            }
+        }
+    </style>
+</head>
+<body>
+     <div id="wrap">
+       <div id="item1"></div>
+       <div id="item2"></div>
+       <div id="item3"></div>
+       <div id="item4"></div>
+     </div>
+</body>
+</html>
