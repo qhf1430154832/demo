@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task-donghua</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+       body{
+           display: flex;
+           flex-direction: column;
+           align-items: center;
+       }
+       table{
+           width: 60%;
+           font-size: 18px;
+           font-family: 微软雅黑;
+       }
+        th{
+            background: black;
+            color: white;
+            text-align: left;
+        }
+        .hui{
+            background-color: #CBCCCB;
+        }
+        #red{
+            color: red;;
+        }
+      #input{
+          width: 60%;
+          height: 50px;
+          margin-top: 80px;
+         display: flex;
+         justify-content: center;
+          
+      }
+      input{
+          width: 50%;
+          height: 100%;
+          border: 4px #7BAFEC solid;
+          transition:  1s linear ;
+      }
+      input:focus{
+          transform: scale(2,1);
+      }
+      #box{
+          margin-top: 80px;
+         
+          width: 300px;
+          height: 180px;
+          overflow: hidden;
+      }
+      #box1{
+        width: 900px;
+          height: 180px;
+          animation: tp 8s infinite  alternate;
+
+      }
+      #box1>div{
+        float: left;
+      }
+      
+      #one{
+          background-color:#008100;
+             
+          width: 300px;
+          height: 180px;
+          
+      }
+      #two{
+          background-color: #0100FE;
+              
+          width: 300px;
+          height: 180px;
+      }
+      #three{
+          background-color: red;
+              
+          width: 300px;
+          height: 180px;
+      }
+      @keyframes tp{
+          50%{
+              margin-left: -300px;
+          }
+          100%{
+              margin-left: -600px;
+          }
+      
+        
+      }
+      #lj{
+       display: inline-block;
+       width:20px;
+       height: 20px;
+       line-height: 26px;
+       position: relative;
+       top:-20px;
+       left: 116px;
+      background-color: silver;
+       color:white;
+       text-align: center;
+     }
+     
+
+
+    </style>
+</head>
+<body>
+    <table>
+      <th>排名</th>
+      <th>网站</th>
+      <th>热度</th>
+      <tr id="red">
+          <td>1.</td>
+          <td>哔哩哔哩</td>
+          <td>13000</td>
+      </tr>
+    
+
+      <tr class="hui" id="red">
+        <td>2.</td>
+        <td>哔哩哔哩</td>
+        <td>12000</td>
+      </tr>
+
+
+      <tr id="red">
+        <td>3.</td>
+          <td>哔哩哔哩</td>
+          <td>11000</td>
+
+      </tr>
+
+
+      <tr class="hui">
+        <td>4.</td>
+        <td>哔哩哔哩</td>
+        <td>10000</td>
+      </tr>
+
+
+      <tr id="red">
+        <td>5.</td>
+        <td>哔哩哔哩</td>
+        <td>9000</td>
+      </tr>
+
+
+      <tr class="hui">
+        <td>6.</td>
+        <td>哔哩哔哩</td>
+        <td>8000</td>
+        <tr>
+
+
+      <tr id="red">
+        <td>7.</td>
+        <td>哔哩哔哩</td>
+        <td>7000</td>
+      </tr>
+
+
+      <tr class="hui">
+        <td>8.</td>
+        <td>哔哩哔哩</td>
+        <td>6000</td>
+      </tr>
+
+
+      <tr id="red">
+        <td>9.</td>
+        <td>哔哩哔哩</td>
+        <td>5000</td>
+      </tr>
+
+
+      <tr class="hui">
+        <td>10.</td>
+          <td>哔哩哔哩</td>
+          <td>4000</td>
+      </tr>
+
+
+    </table>
+    <div id="input">
+       <input type="text">
+    </div>
+    <div id="box">
+        <div id="box1">
+          <div id="one"></div>
+          <div id="two"></div>
+          <div id="three"></div>
+
+        </div>
+    </div>
+   
+    <div >
+        <a href="#one"  id="lj">1</a>
+        <a href="#two"  id="lj">2</a>
+        <a href="#three" id="lj" >3</a>
+     </div>
+</body>
+</html>
